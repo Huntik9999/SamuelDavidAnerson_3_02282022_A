@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*location*/
+.location{
+    background-color: #dddddd;
+    border-top:solid 5px lightgray;
+    color: #333333;
+}
+.explore {
+    background-color: #eeeeee;
+}
+/*cards*/
+.restaurants {
+    background-color: #eeeeee;
+}
+
+.new{
+    background-color: #99E2D0;    
+    color: green;
+}
+/*footer*/
+.footer{
+    background-color: #333333;
+    color: white;
+}
