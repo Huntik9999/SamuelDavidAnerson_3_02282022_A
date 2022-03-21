@@ -1,5 +1,4 @@
-body {
-}
+
 /*header*/
 .header {
     display: flex;
@@ -43,7 +42,7 @@ body {
 .explore-btn{
     text-decoration: none;
     color: white;
-    background-color: purple;
+    background-image: linear-gradient( #FF79DA, #9356DC);
     font-size: 30px;
     padding: 20px 30px;
     border-radius: 50px;
@@ -135,6 +134,8 @@ body {
     position: relative;
     font-size: 30px;
     padding-bottom: 20px;
+    text-decoration: none;
+    color: black;
 }
 
 .card img{
@@ -187,4 +188,154 @@ body {
 
 .footer a:hover{
     cursor: pointer;
+}
+
+/*menu-header*/
+
+.menu-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width:100%;
+    position: relative;
+}
+.menu-header a img {
+    height: auto;
+    width: 280px;
+}
+.menu-header a i{
+    font-size: 40px;
+    position: absolute;
+    bottom:24px;
+    left:40px;
+    text-decoration: none;
+    color: black;
+}
+
+/*top-section of menu*/
+.top-section{
+    width: 100%;
+    position: relative;
+}
+
+.top-section img {
+    object-fit: cover;
+    width: 100%;
+    height: 630px;
+}
+.top-section-text {
+    background-color: white;
+    width: 100%;
+    font-size: 40px;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px 50px 0px 0px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.city-name{
+    width: fit-content;
+    margin-left: 40px;
+    font-family: Shrikhand;
+
+}
+
+.top-section-text div i {
+    margin-right: 60px;
+}
+
+/*Entrees*/
+
+
+.entrees{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    padding-bottom: 30px;
+}
+
+.entrees div{
+    padding-bottom: 20px;
+    font-size: larger;
+    padding-top: 15px;
+}
+
+.underline {
+    border-bottom: 4px #99E2D0 solid;
+    padding-bottom: 5px;
+}
+.menu-selector{
+    display: flex;
+    flex-direction: column;
+    border:3px solid #f2f2f2;
+    margin: 10px 0px;
+    font-size: larger;
+    position: relative;
+    padding:10px 10px;
+    border-radius: 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.menu-selector div{
+    position: absolute;
+    right: 20px;
+    bottom: -5px;
+}
+
+.menu-selector strong{
+    padding-bottom: 10px;
+}
+
+/*Main dishes*/
+
+.main-dish{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    padding-bottom: 30px;
+}
+
+.main-dish div{
+    padding-bottom: 20px;
+    font-size: larger;
+    padding-top: 15px;
+}
+.main-dish div span{
+    margin-right: 10px;
+}
+
+/*deserts*/
+
+.desserts{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    padding-bottom: 30px;
+}
+
+.desserts div{
+    padding-bottom: 20px;
+    font-size: larger;
+    padding-top: 15px;
+}
+
+/*order button*/
+.order-button-container{
+    display: flex; 
+    justify-content: center; 
+    padding-top: 30px;
+    padding-bottom: 120px;
+}
+
+.order-button{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 20px 120px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-image: linear-gradient( #FF79DA, #9356DC);
+
 }
