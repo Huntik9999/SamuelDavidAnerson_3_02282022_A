@@ -6,6 +6,55 @@ body {
     padding: 0%;
     box-sizing: border-box;
 }
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #9356DC;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+
 /*location*/
 .location{
     background-color: #dddddd;
@@ -14,6 +63,14 @@ body {
 }
 .explore {
     background-color: #eeeeee;
+}
+
+.explore a{
+    transition: 0.5s;
+}
+.explore a:hover{
+    filter: brightness(110%);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 /*cards*/
 .restaurants {
@@ -24,8 +81,114 @@ body {
     background-color: #99E2D0;    
     color: green;
 }
+.card{
+    transition: 0.3s;
+}
+.heart:hover .fa-solid{
+    color: #9356DC;
+    opacity: 1;
+
+}
+.heart .fa-solid{
+    opacity: 0;
+    color:#9356DC;
+    transition: 1s;
+}
+.restaurants a:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    filter: brightness(110%);
+}
 /*footer*/
 .footer{
     background-color: #333333;
     color: white;
 }
+.footer a{
+    transition: 0.3s;
+}
+
+.footer a:hover{
+    color:#dddddd;
+}
+
+
+/*menu keyframes and animations*/
+.menu-header{
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+.top-section{
+    animation-name: animatebottom;
+    animation-duration: 2s
+}
+.entrees {
+    animation-name: animatebottom;
+    animation-duration: 3s;
+}
+
+.main-dish{
+    animation-name: animatebottom;
+    animation-duration: 4s;
+}
+
+.desserts{
+    animation-name: animatebottom;
+    animation-duration: 5s;
+}
+
+.order-button-container{
+    animation-name: animatebottom;
+    animation-duration: 6s;
+}
+
+.footer{
+    animation-name: animatebottom;
+    animation-duration: 7s;
+}
+
+/* menu page checkmark*/ 
+.overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.menu-selector{
+    overflow: hidden;
+}
+.menu-selector:hover  {
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+.menu-selector:hover .fa-circle-check {
+    animation: check  1s infinite;
+}
+.menu-selector:hover .check-background {
+    animation: check-opacity 1s infinite;
+}
+
+@keyframes check {
+    from {
+        right: -40px;
+        transform: rotate(0deg);
+    }
+    to   {
+        right: 30px;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes check-opacity {
+    from {right: -110px;}
+    to {right: -20px;}
+}
+
+/*@keyframes width-change {
+    from { transform: translatex(100px) }
+    to {
+      transform: translatex(0);
+    }
+}*/ 
+
+ 
