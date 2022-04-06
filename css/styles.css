@@ -154,6 +154,19 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.strong-text{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    transition: 1s;
+}
+
+.menu-selector:hover .strong-text{
+    width: 80%;
+    white-space: nowrap;
+}
 .menu-selector{
     overflow: hidden;
 }
@@ -188,11 +201,6 @@ body {
     to {right: -20px;}
 }
 
-/*@keyframes width-change {
-    from { transform: translatex(100px) }
-    to {
-      transform: translatex(0);
-    }
-}*/ 
+
 
  
