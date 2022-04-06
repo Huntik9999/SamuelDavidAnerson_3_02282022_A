@@ -105,6 +105,8 @@ body {
 }
 .footer a{
     transition: 0.3s;
+    text-decoration: none;
+    color:white;
 }
 
 .footer a:hover{
@@ -159,13 +161,15 @@ body {
     cursor: pointer;
     white-space: nowrap;
 }
-
-
 .menu-selector:hover .fa-circle-check {
-    animation: check  1s infinite;
+    animation-name: check;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 .menu-selector:hover .check-background {
-    animation: check-opacity 1s infinite;
+    animation-name: check-opacity;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 @keyframes check {
