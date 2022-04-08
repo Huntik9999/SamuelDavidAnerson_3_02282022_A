@@ -49,7 +49,24 @@ body {
     from{ bottom:-100px; opacity:0 } 
     to{ bottom:0; opacity:1 }
   }
-  
+  /*@keyframes animatebottomm {
+    0% {
+        opacity:0;
+        visibility: hidden;
+    }
+    100% {
+        opacity:1;
+    }
+  }*/
+  @keyframes animatebottomm {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
   #myDiv {
     display: none;
     text-align: center;
@@ -116,36 +133,58 @@ body {
 
 /*menu keyframes and animations*/
 .menu-header{
-    animation-name: animatebottom;
-    animation-duration: 1s
+    animation-name: animatebottomm;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    animation-delay: 0s;
+
 }
 .top-section{
-    animation-name: animatebottom;
-    animation-duration: 2s
+    animation-name: animatebottomm;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    animation-delay: 1s;
 }
 .entrees {
-    animation-name: animatebottom;
-    animation-duration: 3s;
+    animation-name: animatebottomm;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    animation-delay: 2s;
 }
 
 .main-dish{
-    animation-name: animatebottom;
-    animation-duration: 4s;
+    animation-name: animatebottomm;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    animation-delay: 3s;
 }
 
 .desserts{
-    animation-name: animatebottom;
-    animation-duration: 5s;
+    animation-name: animatebottomm;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    animation-delay: 4s;
 }
 
 .order-button-container{
-    animation-name: animatebottom;
-    animation-duration: 6s;
+    animation-name: animatebottomm;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    animation-delay: 5s;
 }
 
 .footer{
-    animation-name: animatebottom;
-    animation-duration: 7s;
+    animation-name: animatebottomm;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    animation-delay: 6s;
 }
 
 /* menu page checkmark*/ 
