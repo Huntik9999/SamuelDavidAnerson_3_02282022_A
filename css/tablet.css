@@ -1,9 +1,13 @@
-
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
 /*header*/
 .header {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 0px;
     width:100%;
 
 }
@@ -197,7 +201,7 @@
 .menu-header {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 0px;
     width:100%;
     position: relative;
 }

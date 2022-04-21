@@ -7,19 +7,19 @@
     <meta name="author" content="Samuel">
     <script src="https://kit.fontawesome.com/bf7313cb3e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 993px)">
-    <link rel="stylesheet" href="css/tablet.css" media="(max-width: 992px) and (min-width: 769px)">
-    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 993px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (max-width: 992px) and (min-width: 769px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>    
 
-<body onload="myFunction()" style="margin:0;">
+<body>
 
     <div id="loader"></div>
-    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <div class="animate-bottom">
         <header class="header">
             <img src="images/logo/ohmyfood.png" alt="Website Logo">
         </header>
@@ -113,19 +113,7 @@
             <a href="#">Legal</a>
             <a href="mailto:ohmyfood@gmail.com">Contact</a>
         </footer>   
-    </div> 
-    <script>
-        var myVar;
-        
-        function myFunction() {
-          myVar = setTimeout(showPage, 3000);
-        }
-        
-        function showPage() {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("myDiv").style.display = "block";
-        }
-    </script>
+    </div>
 </body>
 
 </html>
